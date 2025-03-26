@@ -12,10 +12,10 @@ const store = useUserStore()
 
 async function login() {
   try {
-    await loginHandler({ email, password, store })
+    await loginHandler({ email: email.value, password: password.value, store })
+    router.push('/')
   } catch (e) {
-    console.log((e as Error).message)
-    router.push({ name: '/error', params: { error: 'error' } })
+    router.push({ path: '/error', query: { error: (e as Error).message } })
   }
 }
 </script>
