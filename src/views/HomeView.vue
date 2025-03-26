@@ -1,7 +1,7 @@
 <script lang="ts" setup>
 import { useUserStore } from '@/stores/user'
-import OrganizacionView from '@/views/users/OrganizacionView.vue'
-import borrachoViewVue from './users/borrachoView.vue'
+import OrganizacionView from '@/views/OrganizacionView.vue'
+import borrachoViewVue from '@/views/borrachoView.vue'
 const store = useUserStore()
 </script>
 
