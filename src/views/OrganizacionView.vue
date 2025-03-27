@@ -141,7 +141,7 @@ async function eliminarPartido(id) {
                 :class="borracho.estaPago ? 'text-green-500' : 'text-red-500'" 
                 class="px-3 py-1"
               >
-                {{ borracho.estaPago ? "Pagado" : "Pendiente" }}
+                {{ borracho.estaPago ? "Pagada" : "Pendiente" }}
               </span>
             </td>
           </tr>

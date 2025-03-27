@@ -13,7 +13,8 @@ export const loginHandler = async ({ email, password, store }: any) => {
   })
 
   if (!res.ok) {
-    throw new Error(`Error: ${res.status} ${res.statusText}`)
+    const error = await res.json().then((obj) => obj.error)
+    throw new Error(`Error ${res.status}: ${error}`)
   }
 
   const objRes = res.json()

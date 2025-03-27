@@ -31,6 +31,7 @@ async function login() {
             type="email"
             v-model="email"
             required
+            placeholder="micorreo@gmail.com"
             class="w-full p-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400"
           />
         </div>
